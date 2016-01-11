@@ -27,9 +27,9 @@
 
     self.navigationController.navigationBar.translucent = YES;
     
-//    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
-//      [self preferredStatusBarStyle];
-//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
+      [self preferredStatusBarStyle];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 -(void)viewWillDisappear:(BOOL)animated

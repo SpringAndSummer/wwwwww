@@ -26,7 +26,7 @@
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
 
     self.navigationController.navigationBar.translucent = YES;
-    
+
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
 //      [self preferredStatusBarStyle];
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -36,6 +36,11 @@
     UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     button.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:button];
+
+    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
+      [self preferredStatusBarStyle];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated

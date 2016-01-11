@@ -28,14 +28,14 @@
     self.navigationController.navigationBar.hidden = YES;
     
     
-    //    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
-    //    self.navigationController.navigationBar.alpha = 0;
-    //    self.navigationController.navigationBar.translucent = NO;
+        self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
+        self.navigationController.navigationBar.alpha = 0;
+        self.navigationController.navigationBar.translucent = NO;
     
-//    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];//设置颜色
-//    [self.navigationController.navigationBar lt_setContentAlpha:0];//隐藏导航栏的线
-//    [self.navigationController.navigationBar lt_setTranslationY:20];//Y轴方向上移动导航栏
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsCompact];
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];//设置颜色
+    [self.navigationController.navigationBar lt_setContentAlpha:0];//隐藏导航栏的线
+    [self.navigationController.navigationBar lt_setTranslationY:20];//Y轴方向上移动导航栏
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsCompact];
 }
 -(void)viewWillDisappear:(BOOL)animated
 {

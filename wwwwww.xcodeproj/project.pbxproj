@@ -16,6 +16,7 @@
 		E25CDC661BFD9D85006092A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25CDC641BFD9D85006092A4 /* LaunchScreen.storyboard */; };
 		E25CDC711BFD9D85006092A4 /* wwwwwwTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CDC701BFD9D85006092A4 /* wwwwwwTests.m */; };
 		E25CDC7C1BFD9D85006092A4 /* wwwwwwUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E25CDC7B1BFD9D85006092A4 /* wwwwwwUITests.m */; };
+		E26A278D1C47AE7D00B4E9D5 /* JSONjiexi.m in Sources */ = {isa = PBXBuildFile; fileRef = E26A278C1C47AE7D00B4E9D5 /* JSONjiexi.m */; };
 		E27217191C3CC74D00143914 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = E27217181C3CC74D00143914 /* UINavigationBar+Awesome.m */; };
 		E272171B1C3CE1AB00143914 /* modify_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E272171A1C3CE1AB00143914 /* modify_back@2x.png */; };
 		E272171D1C3CE1BB00143914 /* home_discover2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E272171C1C3CE1BB00143914 /* home_discover2x.png */; };
@@ -92,6 +93,8 @@
 		E25CDC771BFD9D85006092A4 /* wwwwwwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wwwwwwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25CDC7B1BFD9D85006092A4 /* wwwwwwUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wwwwwwUITests.m; sourceTree = "<group>"; };
 		E25CDC7D1BFD9D85006092A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26A278B1C47AE7D00B4E9D5 /* JSONjiexi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONjiexi.h; sourceTree = "<group>"; };
+		E26A278C1C47AE7D00B4E9D5 /* JSONjiexi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONjiexi.m; sourceTree = "<group>"; };
 		E27217171C3CC74D00143914 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		E27217181C3CC74D00143914 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		E272171A1C3CE1AB00143914 /* modify_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modify_back@2x.png"; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 				E2946A0F1C45FAC000226025 /* HTTPRequestManager.m */,
 				E2246F9C1C464B8C0065FA36 /* NSObject+Analysis.h */,
 				E2246F9D1C464B8C0065FA36 /* NSObject+Analysis.m */,
+				E26A278B1C47AE7D00B4E9D5 /* JSONjiexi.h */,
+				E26A278C1C47AE7D00B4E9D5 /* JSONjiexi.m */,
 				E25CDC5F1BFD9D85006092A4 /* Main.storyboard */,
 				E25CDC621BFD9D85006092A4 /* Assets.xcassets */,
 				E25CDC641BFD9D85006092A4 /* LaunchScreen.storyboard */,
@@ -517,6 +522,7 @@
 				E29469FE1C45FA4200226025 /* AFNetworkReachabilityManager.m in Sources */,
 				E25CDC5E1BFD9D85006092A4 /* ViewController.m in Sources */,
 				E2946A091C45FA4200226025 /* UIButton+AFNetworking.m in Sources */,
+				E26A278D1C47AE7D00B4E9D5 /* JSONjiexi.m in Sources */,
 				E2EB7F251C463E9400418D94 /* MJProperty.m in Sources */,
 				E2EB7F231C463E9400418D94 /* MJExtensionConst.m in Sources */,
 				E2946A001C45FA4200226025 /* AFURLConnectionOperation.m in Sources */,

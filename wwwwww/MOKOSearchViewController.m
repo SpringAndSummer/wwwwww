@@ -26,7 +26,7 @@
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
 
     self.navigationController.navigationBar.translucent = YES;
-    
+
 //    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
 //      [self preferredStatusBarStyle];
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -35,7 +35,18 @@
     
     UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     button.backgroundColor = [UIColor purpleColor];
+    
+    [button setTitle:@"ceshi" forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"home_discover2x"] forState:UIControlStateNormal];
+    
+    [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:button];
+
+    [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
+      [self preferredStatusBarStyle];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -48,10 +59,10 @@
     return  UIStatusBarStyleLightContent;
 }
 
-//-(BOOL)prefersStatusBarHidden
-//{
-//    return YES;
-//}
+-(void)buttonAction
+{
+    NSLog(@"点击事件");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

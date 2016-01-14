@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MOKOViewController.h"
+#import "MOKOSearchViewController.h"
 
 
 

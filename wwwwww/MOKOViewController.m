@@ -9,6 +9,7 @@
 #import "MOKOViewController.h"
 #import "UINavigationBar+Awesome.h"
 #import "MOKOSearchViewController.h"
+#import "HTTPRequestManager.h"
 
 #define rect(x,y,w,h) CGRectMake(x, y, w, h)
 #define KscreenWidth [UIScreen mainScreen].bounds.size.width
@@ -36,6 +37,8 @@
     [self.navigationController.navigationBar lt_setContentAlpha:0];//隐藏导航栏的线
     [self.navigationController.navigationBar lt_setTranslationY:20];//Y轴方向上移动导航栏
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsCompact];
+    
+    [self initData];
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
@@ -43,6 +46,38 @@
      [self.navigationController setToolbarHidden:YES animated:YES]; //设置toolBar 是否隐藏
      self.navigationController.navigationBar.hidden = NO;
 }
+
+-(void)initData
+{
+    int page = 1;
+    int number = 10;
+    NSString *path = [NSString stringWithFormat:@"https://dwintf.moko.cc:19022/girltasks/daily?page=%d&perpage=%d",page,number];
+    HTTPRequestManager *manager = [HTTPRequestManager shareManager];
+//    [manager sendGetRequestWith:path requestSuccsion:^(AFHTTPRequestOperation *operation, id restObject) {
+//        
+//        NSLog(@"%@",restObject);
+//        
+//    } requestFail:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        NSLog(@"%@",error);
+//    }];
+
+   [manager sendGetRequestWith:path requestSuccsion:^(AFHTTPRequestOperation *operation, id resultObject) {
+       
+       if (resultObject) {
+           NSLog(@"%@",resultObject);
+       }
+       
+   } requestFail:^(AFHTTPRequestOperation *operation, NSError *error) {
+       
+       NSLog(@"%@",error);
+       
+   }];
+    
+    
+}
+
+
+
 
 - (void)viewDidLoad {
     

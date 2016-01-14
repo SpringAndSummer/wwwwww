@@ -40,7 +40,7 @@
     [button setImage:[UIImage imageNamed:@"home_discover2x"] forState:UIControlStateNormal];
     
     [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
-    
+
     [self.view addSubview:button];
 
     [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];

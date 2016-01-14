@@ -33,13 +33,7 @@
     
     
     
-    UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    button.backgroundColor = [UIColor purpleColor];
-    
-    [button setTitle:@"ceshi" forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"home_discover2x"] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(buttonAction) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+
 
     [[UIApplication sharedApplication] setStatusBarHidden:YES animated:YES];
       [self preferredStatusBarStyle];

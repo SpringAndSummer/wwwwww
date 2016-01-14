@@ -11,6 +11,12 @@
 
 @implementation NSObject (Analysis)
 
+
+
+
+
+
+
 +(instancetype)modelWithJson:(NSString *)jsonString
 {
     NSObject *object = [self objectWithKeyValues:jsonString];
